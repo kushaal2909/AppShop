@@ -1,0 +1,93 @@
+.banner-innerpage {
+    padding: 150px 0 100px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .banner-innerpage .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .banner-innerpage .subtitle {
+    color: #ffffff;
+  }
+  .shop-listing .shop-hover {
+    position: relative;
+  }
+  .shop-listing .shop-hover .card-img-overlay {
+    display: none;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .shop-listing .shop-hover:hover .card-img-overlay {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shop-listing .shop-hover .label {
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  /*******************
+  shop table
+  *******************/
+  .shop-table td {
+    padding: 30px 0;
+  }
+  /**********  Main Menu CSS Code Starts  **********/
+.main-menu {
+    list-style: none;
+  }
+  .main-menu a {
+    font-weight: 500;
+    
+    color: white;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration:wavy;
+  }
+  .main-menu li {
+    float: left;
+    padding: 12px 20px;
+  }
+  /**********  Main Menu CSS Code Ends  **********/
+  .input-border{
+    border-radius: 10px;
+  border: 2px solid purple;
+  padding: 20px;
+  width: 350px;
+  height: 20px;
+}
+::placeholder {
+  color: lightgray;
+  text-align: center;
+  opacity: 1; /* Firefox */
+}
+
+.loader7{width:100px;height:100px;margin:50px auto;position:relative}
+.loader7 .loader-inner-1,.loader7 .loader-inner-2,.loader7 .loader-inner-3,.loader7 .loader-inner-4{display:block;width:20px;height:20px;border-radius:20px;position:absolute}
+.loader7 .loader-inner-1:before,.loader7 .loader-inner-2:before,.loader7 .loader-inner-3:before,.loader7 .loader-inner-4:before{content:"";display:block;width:20px;height:20px;border-radius:20px;position:absolute;right:0;animation-name:loading-7;animation-iteration-count:infinite;animation-direction:normal;animation-duration:2s}
+.loader7 .loader-inner-1{top:0;left:0;transform:rotate(70deg)}
+.loader7 .loader-inner-1:before{background:#06aed5}
+.loader7 .loader-inner-2{top:0;right:0;transform:rotate(160deg)}
+.loader7 .loader-inner-2:before{background:#ec008c}
+.loader7 .loader-inner-3{bottom:0;right:0;transform:rotate(-110deg)}
+.loader7 .loader-inner-3:before{background:#ffbf00}
+.loader7 .loader-inner-4{bottom:0;left:0;transform:rotate(-20deg)}
+.loader7 .loader-inner-4:before{background:#079c00}
+@keyframes loading-7{
+    0%{width:20px;right:0}
+    30%{width:120px;right:-100px}
+    60%{width:20px;right:-100px}
+}
+
+
+

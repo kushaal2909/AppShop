@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+
+  
+  <style>
+    
+    body {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+        
+        background: url(https://i0.wp.com/segwitz.com/wp-content/uploads/2021/09/why-ecommerce-need-mobile-apps.jpg) no-repeat center center fixed;
+         
+        -webkit-background-size: cover;
+         -moz-background-size: cover;
+          -o-background-size: cover;
+        background-size: cover;
+        align-items: left;
+        
+    }
+</style>
+</head>
+<body>
+    
+
+    <h1 style="text-align: center; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color:darkviolet">PRODUCT LIST</h1>
+
+
+<!-- <table> -->
+
+    <!-- <tr *ngFor="let user of productlist"> -->
+
+
+        <div class="row">
+        <div *ngFor="let user of cartlist" class="card" class="card border-danger" style="width: 18rem; margin-left: 3%; margin-bottom: 3%; border-style:dotted; background: transparent;">
+            <br>
+            <img src="https://lh3.googleusercontent.com/pw/ADCreHcszTUST7tGoFkDQlKQjnI3I_ciQshgfZV70klBLTuQ2BaD3ojLHFuyAEogsvDOEF-NuuWQbfrPPj2mAHN2TEYyAVY_I75dCwnce7REsw08Kx0uzOI62xRAYDFmaIKzGWicBXcKAVaGTFkAccuV4BGSZfKlVCesd7Mx-dJvSfFrk2sDpzBa8ZJYdNwiw3CVJviIcIEkjWUksffm4Hs_s8vulK3T9wyNbiYmKeuYksVHYOkhv79W4bDxfgMvjFVIJz7iO3bTD7S8te0VG5W2ml8N0Eh2KEmSQAXkthol3-ByBv_XuJurVeoy3KFx6gX99Y05vQPzdxUAfGAtK0ag42rkpYsnv_0T1p7zQLvGwrulLQwoTLBNuL0PpL60hT6WJLsrlzGY4KV9ee_-0kf1Xx8iUiVhy7YhXYcux9LhgyhxweIU0bBRWOoOIr-xZ2F5SlstO_nP9-6QqLnLz8HYpOsjP3TnYT3bLum4tFarX_MSdzxB8q9Ll0aoIiMfeSEowJStqC-d6YyWNC74-yt40j1haE2ZHk7khaZ4SsqzfVdp5PFb6Mse03OeAOZwy79mEAdPy9uYuE33-9U5AuiyBn6AXwuuzEad5gASBK-SsdimN4tV9FIrBvG8hJrvdHq0UnDyWBg_nDEKkuWZ_ouO8OlO5iJuveWkEdlxzV3SxwCgNmqqEn3jYWSXW7oRUXtw-6PUVOupvPuWCdDPZVAw1UMlQfXWccfpzs-2jvL0Qy_Lt9HkMT_ewSeFlq7xc25kj8_bYJOLh0vu1EtwjWkS8rbXCTjJ5h0JwUsEaaKCWSqJTuKZJTYti-NFJ4PiW4kQaGACTC1CHgPIZ_oJ5a5xUbhvqMBMkB5wfBButONwlzGvkSJdOcHy5TedsJTl_nPNw0qtef_J7epkJG7FtoxFj0_GHO5qu60YLDgQaSQcJvsJiDbzElx3RwNp4rhI6ohd8TXoi4mCSjdzXjbU6qv9UXdmOpn-uvhy4cb4dtgu4FK7PpEfxVcS4oKo_Z42O44v74eQERZVIQQ90VaLvUGiUM1eZIYPi-V4fbTi0eLMsTeAohsNbPdc9g=w172-h138-s-no?authuser=0" alt="...">
+            <div class="card-body" >
+              <h5 class="card-title"  style="color: aqua; font-weight:bold; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">{{user.productName}}</h5>
+              <p class="card-text" style="color: aqua; font-family: 'Times New Roman', Times, serif;">{{user.price}}</p>
+              <a href="/" class="btn btn-primary" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: crimson; border: none;">Add to Cart</a>
+              
+              
+            </div>
+          </div>
+          
+        </div>
+
+       
+
+
+
+        <!-- <td> <button  class="btn btn-success" (click)="updateUser(user.custId)" >Edit</button></td>
+        <td> <button class="btn btn-danger" (click)="deleteUser(user.custId)">delete</button></td> -->
+    <!-- </tr> -->
+    <!-- <button (click)="logout()" class="btn btn-primary " style="text-align: center; margin-top: 50px;">logout</button> -->
+<!-- </table> -->
+</body>
+</html>

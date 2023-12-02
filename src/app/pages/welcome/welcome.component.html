@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      
+      body {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+
+        background: url(https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product_1258-67806.jpg?t=st=1701323525~exp=1701324125~hmac=fd14b88e71a4f87fe33e7202271b53d29a1b93bda8675e0af81d47bad7d3ea96https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product_1258-67806.jpg?t=st=1701323525~exp=1701324125~hmac=fd14b88e71a4f87fe33e7202271b53d29a1b93bda8675e0af81d47bad7d3ea96)
+          no-repeat center center fixed;
+
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        align-items: left;
+      }
+    </style>
+    
+  </head>
+  <body>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white-info">
+      <div class="container">
+        <a
+          routerLink="/"
+          class="navbar-brand"
+          style="
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+          ">
+          <img
+            style="margin-left: -100%; margin-top: 0%; width: 50px; left: 15px"
+            src="https://lh3.googleusercontent.com/pw/ADCreHcszTUST7tGoFkDQlKQjnI3I_ciQshgfZV70klBLTuQ2BaD3ojLHFuyAEogsvDOEF-NuuWQbfrPPj2mAHN2TEYyAVY_I75dCwnce7REsw08Kx0uzOI62xRAYDFmaIKzGWicBXcKAVaGTFkAccuV4BGSZfKlVCesd7Mx-dJvSfFrk2sDpzBa8ZJYdNwiw3CVJviIcIEkjWUksffm4Hs_s8vulK3T9wyNbiYmKeuYksVHYOkhv79W4bDxfgMvjFVIJz7iO3bTD7S8te0VG5W2ml8N0Eh2KEmSQAXkthol3-ByBv_XuJurVeoy3KFx6gX99Y05vQPzdxUAfGAtK0ag42rkpYsnv_0T1p7zQLvGwrulLQwoTLBNuL0PpL60hT6WJLsrlzGY4KV9ee_-0kf1Xx8iUiVhy7YhXYcux9LhgyhxweIU0bBRWOoOIr-xZ2F5SlstO_nP9-6QqLnLz8HYpOsjP3TnYT3bLum4tFarX_MSdzxB8q9Ll0aoIiMfeSEowJStqC-d6YyWNC74-yt40j1haE2ZHk7khaZ4SsqzfVdp5PFb6Mse03OeAOZwy79mEAdPy9uYuE33-9U5AuiyBn6AXwuuzEad5gASBK-SsdimN4tV9FIrBvG8hJrvdHq0UnDyWBg_nDEKkuWZ_ouO8OlO5iJuveWkEdlxzV3SxwCgNmqqEn3jYWSXW7oRUXtw-6PUVOupvPuWCdDPZVAw1UMlQfXWccfpzs-2jvL0Qy_Lt9HkMT_ewSeFlq7xc25kj8_bYJOLh0vu1EtwjWkS8rbXCTjJ5h0JwUsEaaKCWSqJTuKZJTYti-NFJ4PiW4kQaGACTC1CHgPIZ_oJ5a5xUbhvqMBMkB5wfBButONwlzGvkSJdOcHy5TedsJTl_nPNw0qtef_J7epkJG7FtoxFj0_GHO5qu60YLDgQaSQcJvsJiDbzElx3RwNp4rhI6ohd8TXoi4mCSjdzXjbU6qv9UXdmOpn-uvhy4cb4dtgu4FK7PpEfxVcS4oKo_Z42O44v74eQERZVIQQ90VaLvUGiUM1eZIYPi-V4fbTi0eLMsTeAohsNbPdc9g=w172-h138-s-no?authuser=0"
+            alt=""/>
+        </a>
+        
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input
+          class="bi bi-search"
+          class="input-border"
+          style=" margin-left: 10%; background: rgba(255, 255, 255, 0.33);
+          border-radius: 16px;
+          
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          
+          border: 1px solid rgba(255, 255, 255, 0.53);"
+          type="text"
+          placeholder="Search for Products, Brand and More"
+        />
+        &nbsp;
+        <button class="btn btn-secondary" type="submit">Search</button>
+        
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav" style="background: transparent; margin-right: -20%;">
+            
+            <li class="nav-item active">
+              
+              <a
+                routerLink="/create"
+                class="nav-link"
+                class="btn btn-outline-light"
+                >Sign Up
+              </a>
+            </li>
+            &nbsp; &nbsp;
+            <li class="nav-item active">
+              <a
+                routerLink="/login"
+                class="nav-link"
+                class="btn btn-outline-light"
+                >Sign In
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div
+        class="banner-innerpage"
+        style="
+          background-image: url(https://images.pexels.com/photos/1005638/pexels-photo-1005638.jpeg?cs=srgb&dl=pexels-oleg-magni-1005638.jpg&fm=jpg);
+        "
+      >
+        <div class="container">
+          <!-- Row  -->
+          <div class="row justify-content-center">
+            <!-- Column -->
+            <div
+              class="col-md-6 align-self-center text-center"
+              data-aos="fade-down"
+              data-aos-duration="1200"
+            >
+              <h5>Welcome to</h5>
+              
+                <img
+                  style="margin-left: -10%"
+                  src="https://lh3.googleusercontent.com/pw/ADCreHcZSZsbJ1jlLf11dx4yMwwLo_mbpGduIA0f9ukRHuIs-oNOQQIQa8AOktVHetG4-uNRZ2FzyaDCBm_c-DhEghF6xd463IJthiZ886wW7zD6O6xtIV5SHBkvLb3zdVE6H61zZsG8zuGcVdaizLylDqcqQtymS7nN8jmp-WFbVPaSl8B6KgnCFe6HOrOSX0oaLGiRzIM1jwIv739YQvECsPNN26s1p-S3cfpT_iD4flmP9XWQf5sc6IkFgN54XUEgg1mZnuDS3Q_aSTLps1JIeLK-XhFZa8_RNmc9ZN__JEnZ3JcTWOY0-ZAe1J0dyuNGPVT74Tf3mBsMirMzU2ZjWovQg0HzcSTwhCnoLij3s4pRD6w5q45behVjrs3k68ESoNGIbkDooFcc8BZjd5w6X7y2lP5d-QlNPny-RLTuUp-emssuX-scFcpGnTasbrgKCCct-aNhSOovJ_d0yAdNvANdB_1qKMFbErc6zr7hMVNb6TmPf9IBfICRmAhWW4RVNpb3vT_LemIhrtMPE9Ph6SOqJKz2E38nt2uKpAEJgjtukte0R3LePc-4h2lXfbOqEaY-xiydwe0uggD_5KkF2y0sOt4rrhA96Sssskpr5h5ujit47YfRQFmyaj50Rv9OhgG4ZIO3O1ST1X_P4tjvFXSsyrZg1veVh6qBV2fagAe1HbIKEsze5jhz3n_1uhsXSJCEhF84W2SQd76xxaN1FpdNgldPYSucoTs3g4BAb2Hi4kXsfIIrtFgtSOjGbQcfz35QUCU-Vo669eR0A3u6KztvxMGqI5yamzQY4--AJ0dElPT5O2lGfF09WtURimMRb7NWUsPrZraOixtLwibdp8REk5NUnZEK_wNqp9YM_2cBoNHTPX_c4HFJF5Iuczvb0gHdVN0rcfA8cngsHJ1TYOxOmWZalyIhnB0psMqht9yt9-ZYNJIxmo-mcS13CLTWxzvq2iapa0DKiCaXALvodVsK1frQbFEXgEUqscQAZoT7NcFRdLbtx1RG2BOmEb3VUarvh4lbCXMGLPTM-dbAHP3xh_06qWBz1j4AB4yy-nnwRs7NsB0zQQ=w681-h119-s-no?authuser=0"
+                  alt=""
+                />
+              
+            </div>
+            <!-- Column -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- Main Menu HTML Code Starts --------->
+
+    <div class="width-100">
+      <div class="">
+        <ul class="main-menu" style="margin-left: 3%">
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke; ">
+            <a routerLink="/" href="#" class=""  >Home</a>
+          </li>
+          
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">iPhone</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke; ">
+            <a routerLink="/products" href="#" class="">Samsung</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">Nokia</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">Motorola</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">iPad</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">Accessories</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">Wired-Cables</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">Headphones</a>
+          </li>
+          <li style="margin-right: 1%; border-radius: 25px 50px 25px;  border: 1px solid whitesmoke;">
+            <a routerLink="/products" href="#" class="">Laptop</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------- Main Menu HTML Code Ends --------->
+    <div class="d-inline p-2 bg-white-info text-white">
+      &nbsp; &nbsp; &nbsp;
+      <img
+        src="https://img.freepik.com/free-vector/realistic-christmas-sale-banner-with-red-page_1361-3133.jpg?t=st=1701327885~exp=1701328485~hmac=e5d63d085d5f92ca539db8566553341cb0ec35020e9651095bf8a7d473f0eb9a"
+        alt="ok"
+      />
+      &nbsp;
+      <img
+        src="https://img.freepik.com/premium-psd/horizontal-website-banne_451189-109.jpg"
+        alt="ok"
+      />
+      <div class="coloumn" style="margin-left: 2%; margin-right: 42px">
+        <div class="row">
+          &nbsp; &nbsp; &nbsp;
+          <img
+            src="https://cdn.printnetwork.com/production/assets/5966561450122033bd4456f8/imageLocker/blog-description/blog/sales_banners.jpg"
+            alt="ok"
+          />
+          &nbsp;
+          <img
+            src="https://img.freepik.com/free-vector/black-friday-sale-with-realistic-3d-paper-page_1361-3675.jpg?t=st=1701327885~exp=1701328485~hmac=6a57a1217f09e583c7e40a7198dec452217eb8f0551e053907ae27808ef2f18a"
+            alt="ok"
+          />
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-0 border-none"
+      style="background-color: black"
+    >
+      <div class="col mb-1">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 link-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3" style="color: white">
+        <h5>ABOUT</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Contact Us</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">About Us</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Careers</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Press</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted"
+              >Corporate Information</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3" style="color: white">
+        <h5>HELP</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Payments</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Shipping</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted"
+              >Cancellation & Returns</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Report Infringement</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3" style="color: white">
+        <h5>CONSUMER POLICY</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted"
+              >Cancellation & Returns</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Terms of Use</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Security</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Privacy</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-muted">Sitemap</a>
+          </li>
+        </ul>
+      </div>
+      \
+
+      <div class="_1HSe4t">
+        <div class="c4gehN">
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+            alt="Become a Seller"
+            width="13"
+            height="12"
+          /><a
+            href="https://seller.flipkart.com/?utm_source=fkwebsiteamp;utm_medium=websitedirect"
+            aria-label="Become a Seller"
+            ><span>Become a Seller</span></a
+          >
+        
+       
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+            alt="Advertise"
+            width="14"
+            height="14"
+          /><a href="https://brands.flipkart.com" aria-label="Advertise"
+            ><span>Advertise</span></a
+          >
+        
+        
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+            alt="Gift Cards"
+            width="13"
+            height="13"
+          /><a
+            href="/the-gift-card-store?otracker=${otracker}_footer_navlinks"
+            aria-label="Gift Cards"
+            ><span>Gift Cards</span></a
+          >
+        
+        
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+            alt="Help Center"
+            width="13"
+            height="13"
+          /><a
+            href="/helpcentre?otracker=${otracker}_footer_navlinks"
+            aria-label="Help Center"
+            ><span>Help Center</span></a
+          >
+          <br /><br /><br />
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <span class="pCGSTE" style="color: white; margin-left: -36%"
+          >© 2023 ShopNest.com</span
+        >
+        <img
+          style="margin-left: 177%"
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+          alt="Payment methods"
+        />
+      </div>
+    </footer>
+    
+  </body>
+</html>

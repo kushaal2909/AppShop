@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            height: fit-content;
+            flex-direction: column;
+            
+            background: url(https://i0.wp.com/segwitz.com/wp-content/uploads/2021/09/why-ecommerce-need-mobile-apps.jpg) no-repeat center center fixed;
+             
+            -webkit-background-size: cover;
+             -moz-background-size: cover;
+              -o-background-size: cover;
+            background-size: cover;
+            align-items: left;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white-info">
+        <div class="container">
+          <a
+          routerLink="/"
+          class="navbar-brand"
+          style="
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+          ">
+          <img
+            style="margin-left: -10%; margin-top: 5%; width: 200px; left: 15px"
+            
+            src="https://lh3.googleusercontent.com/pw/ADCreHcZSZsbJ1jlLf11dx4yMwwLo_mbpGduIA0f9ukRHuIs-oNOQQIQa8AOktVHetG4-uNRZ2FzyaDCBm_c-DhEghF6xd463IJthiZ886wW7zD6O6xtIV5SHBkvLb3zdVE6H61zZsG8zuGcVdaizLylDqcqQtymS7nN8jmp-WFbVPaSl8B6KgnCFe6HOrOSX0oaLGiRzIM1jwIv739YQvECsPNN26s1p-S3cfpT_iD4flmP9XWQf5sc6IkFgN54XUEgg1mZnuDS3Q_aSTLps1JIeLK-XhFZa8_RNmc9ZN__JEnZ3JcTWOY0-ZAe1J0dyuNGPVT74Tf3mBsMirMzU2ZjWovQg0HzcSTwhCnoLij3s4pRD6w5q45behVjrs3k68ESoNGIbkDooFcc8BZjd5w6X7y2lP5d-QlNPny-RLTuUp-emssuX-scFcpGnTasbrgKCCct-aNhSOovJ_d0yAdNvANdB_1qKMFbErc6zr7hMVNb6TmPf9IBfICRmAhWW4RVNpb3vT_LemIhrtMPE9Ph6SOqJKz2E38nt2uKpAEJgjtukte0R3LePc-4h2lXfbOqEaY-xiydwe0uggD_5KkF2y0sOt4rrhA96Sssskpr5h5ujit47YfRQFmyaj50Rv9OhgG4ZIO3O1ST1X_P4tjvFXSsyrZg1veVh6qBV2fagAe1HbIKEsze5jhz3n_1uhsXSJCEhF84W2SQd76xxaN1FpdNgldPYSucoTs3g4BAb2Hi4kXsfIIrtFgtSOjGbQcfz35QUCU-Vo669eR0A3u6KztvxMGqI5yamzQY4--AJ0dElPT5O2lGfF09WtURimMRb7NWUsPrZraOixtLwibdp8REk5NUnZEK_wNqp9YM_2cBoNHTPX_c4HFJF5Iuczvb0gHdVN0rcfA8cngsHJ1TYOxOmWZalyIhnB0psMqht9yt9-ZYNJIxmo-mcS13CLTWxzvq2iapa0DKiCaXALvodVsK1frQbFEXgEUqscQAZoT7NcFRdLbtx1RG2BOmEb3VUarvh4lbCXMGLPTM-dbAHP3xh_06qWBz1j4AB4yy-nnwRs7NsB0zQQ=w681-h119-s-no?authuser=0"
+            alt=""/>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+          <img
+          style="margin-right: 60%; margin-top: 0%; width: 50px; left: 15px"
+          src="https://lh3.googleusercontent.com/pw/ADCreHcszTUST7tGoFkDQlKQjnI3I_ciQshgfZV70klBLTuQ2BaD3ojLHFuyAEogsvDOEF-NuuWQbfrPPj2mAHN2TEYyAVY_I75dCwnce7REsw08Kx0uzOI62xRAYDFmaIKzGWicBXcKAVaGTFkAccuV4BGSZfKlVCesd7Mx-dJvSfFrk2sDpzBa8ZJYdNwiw3CVJviIcIEkjWUksffm4Hs_s8vulK3T9wyNbiYmKeuYksVHYOkhv79W4bDxfgMvjFVIJz7iO3bTD7S8te0VG5W2ml8N0Eh2KEmSQAXkthol3-ByBv_XuJurVeoy3KFx6gX99Y05vQPzdxUAfGAtK0ag42rkpYsnv_0T1p7zQLvGwrulLQwoTLBNuL0PpL60hT6WJLsrlzGY4KV9ee_-0kf1Xx8iUiVhy7YhXYcux9LhgyhxweIU0bBRWOoOIr-xZ2F5SlstO_nP9-6QqLnLz8HYpOsjP3TnYT3bLum4tFarX_MSdzxB8q9Ll0aoIiMfeSEowJStqC-d6YyWNC74-yt40j1haE2ZHk7khaZ4SsqzfVdp5PFb6Mse03OeAOZwy79mEAdPy9uYuE33-9U5AuiyBn6AXwuuzEad5gASBK-SsdimN4tV9FIrBvG8hJrvdHq0UnDyWBg_nDEKkuWZ_ouO8OlO5iJuveWkEdlxzV3SxwCgNmqqEn3jYWSXW7oRUXtw-6PUVOupvPuWCdDPZVAw1UMlQfXWccfpzs-2jvL0Qy_Lt9HkMT_ewSeFlq7xc25kj8_bYJOLh0vu1EtwjWkS8rbXCTjJ5h0JwUsEaaKCWSqJTuKZJTYti-NFJ4PiW4kQaGACTC1CHgPIZ_oJ5a5xUbhvqMBMkB5wfBButONwlzGvkSJdOcHy5TedsJTl_nPNw0qtef_J7epkJG7FtoxFj0_GHO5qu60YLDgQaSQcJvsJiDbzElx3RwNp4rhI6ohd8TXoi4mCSjdzXjbU6qv9UXdmOpn-uvhy4cb4dtgu4FK7PpEfxVcS4oKo_Z42O44v74eQERZVIQQ90VaLvUGiUM1eZIYPi-V4fbTi0eLMsTeAohsNbPdc9g=w172-h138-s-no?authuser=0"
+          alt=""/>
+            <ul class="navbar-nav" style="background: transparent">
+                
+              
+              
+              <li class="nav-item active">
+            <a
+            routerLink="/create">
+                <img style="margin-right: -10%; margin-top: 5%; width: 200px; left: 15px"
+            style="margin-left: -10%;  width: 150px; left: 15px"
+            src="https://lh3.googleusercontent.com/pw/ADCreHchO75wphz7xBFXiEeqlDKse1yoMoLDZuV-V73UZGFKExvcXxg1h_WjXSgKKQ_OvglT82ArbDsYb_0TktMfjWXCCU7pEfJkS6RC0BUuOy9YTdGZbdKBPOiGeUPqKKHbsrptfYKYR8qBG9BxdHUARWSbTyONcyYbS6gMfVKZdxnki_n8XlfVKirUUKymx3Agom5OFUC9-DjS9Wsu31oVnLXZRzp0nvxzM1m_mhJnblQ4uBkcn_vWxF56V7cXGyOxv9kL_c6ARKpYuIXoanecORQZ11mi1ll-jMGxJZWpNwJYKut6KGRmDCX9StTPH_eb7OcEN1GUPV3LEt6I9GFgbEruFdNu6uXH7xU07AzT3ac4tQUwyqiltd3223cYwRB043x6-3pM9K1Bl4bF0Cw67jrSxtFqjBkMtimhoVksKcTDlhNjZaGH6O5E-mF3zUFKN8R72AD9ya5dJ-JoXrqQ9xRpoP-DJhClLw6XLInTenhQZB3Qp1lyzEVXSPeMRTt3Zts2m9v9kej-n1zEKa4zCg25tagShFfQKhkuBm7fEC5gz935mbX4lx5omJfMLRqEqEX8_zp_kHMtyFPIWGgYQd_HDhJFaw8_DvpKcj8lGWrJ-yaZV4-_JBHU32i5qtD8OZbz-vjmuH-Hr1h0W0xZ5p8H02Ruh9laqLYR0-P5yEljZOHrmL_H1MOlIbCtxbxWkZBuNMFdD4cM_sDrM_DwI0M7u353tEsk5fRKaF51ROqN1n6Li8cgwA6xqJuZQaBteS-VL9MugwtkqMdl5orm9aeB8fD5PN12UMstsuCVre6YewpQ5IFTEss0F3J4Lb2Z2Cu1EEHhfPZYVFEBPBB3ombypASuUJQQeRYqyUsbsRw3f1VeaSorYAXjAYae9-R2tc6wJKW5EicxyXN4tIN-T5Y9EE8WLE_rb926fmBZbX0Vrmw8Mip3AuqAUJU8LNtheORKjKIRepUuoNOhVhO4hSPS4HZcOwVdk628GIVUq8JY6_ko1_ZPxFBt1um3d1NuBy25h3ffSz2pyS6JJrHvlMZIjOy72KZ5s0zAPPdKwXPp_v5xFrfNog=w356-h98-s-no?authuser=0"
+            alt=""/>
+              </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <div (ngSubmit)="formSubmit()">
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input class="input-border"  style="font-size: 20px; background: transparent; border-color: grey;"  type="email"   placeholder="Email" [(ngModel)]="userData.email">
+        <br>
+        <br>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input class="input-border" style="font-size: 20px; background: transparent; border-color: grey;" type="password" placeholder="Password" [(ngModel)]="userData.password">
+        <br>
+        <br>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <button class="form-control" class="btn btn-primary" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: crimson; border: none;" (click)="formSubmit()">Login</button>
+        &nbsp;
+        <button class="form-control" id="submitForm" class="btn btn-primary" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: crimson; border: none;" (click)="signup()">Sign Up</button>
+        <br>
+        <br>
+        <br>
+        
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+        
+       
+        
+        
+    </div>
+    
+    
+    
+</body>
+</html>
+
