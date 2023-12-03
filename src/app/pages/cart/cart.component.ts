@@ -16,7 +16,8 @@ export class CartComponent implements OnInit {
 
   cartData={
     productName:'',
-    price:''
+    price:'',
+    customerId:''
   }
 
   constructor(private routes:Router,

@@ -14,7 +14,8 @@ export class ProductsComponent implements OnInit{
 
   productData = {
     productName:'',
-    price:''
+    price:'',
+    customerId:''
   }
 
   cartData = {
